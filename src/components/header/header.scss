@@ -1,0 +1,100 @@
+header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 10rem;
+  padding: 2rem 3.5rem;
+
+  position: fixed;
+  width: 100%;
+
+  
+  
+
+}
+
+nav{
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1400px;
+
+  .left{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+    h1{
+      display: flex;
+      align-items: center;
+  
+      a{
+        color: var(--white-300);
+      }
+      span{
+        color: var(--green-100);
+        font-size: 3.3rem;
+      }
+    }
+      img{
+        height: 2rem;
+        width: 3rem;
+        object-fit: cover;
+      }
+    }
+  }
+
+  .right{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 50%;
+
+    .navegator{
+      display: flex;
+      align-items: center;
+      width: 60%;
+      justify-content: space-evenly;
+
+      a{
+        color: var(--white-300);
+        font-weight: 700;
+        transition: 0.2s;
+
+        &:hover{
+          color: var(--green-300);
+        }
+      }
+
+      a.select{
+        color: var(--green-300);
+      }
+    }
+
+    .contact-button{
+      color: var(--black);
+      background-color: var(--white-300);
+      padding: 1rem;
+      border-radius: 8px 0 8px 0;
+      transition: 0.2s;
+
+      font-weight: 800;
+
+      &:hover{
+        background-color: var(--white-100);
+        filter: brightness(.8);
+      }
+    }
+  }
+
+
+
+@media (max-width:1020px){
+  .right{
+    visibility: hidden;
+    max-width: 0;
+  }}
+
+    

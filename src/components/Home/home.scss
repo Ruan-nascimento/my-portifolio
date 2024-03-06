@@ -1,0 +1,146 @@
+@keyframes Brigthness{
+  0%{
+    box-shadow: 0 0 10px 2px var(--green-100);
+  }
+  100%{
+    box-shadow: 0 0 70px 7px var(--green-100);
+  }
+}
+
+
+
+.containerHome{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8rem;
+  width: 100%;
+  height: 100%;
+  padding: 0 3%;
+  max-width: 1400px;
+
+  .left{
+    max-width: 35%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .message{
+    font-family: "JetBrains Mono", monospace;
+    font-size: 5rem;
+    line-height: 6rem;
+    font-weight: 600;
+  }
+  .description{
+    max-width: 80%;
+    margin-top: 1rem;
+  }
+
+  .contateme{
+    margin-top: 3rem;
+    background-color: var(--green-100);
+    width: 15rem;
+    padding: 1.4rem;
+    border-radius: 0 8px 0 8px;
+
+    color: var(--gray-500);
+    font-size: 1.8rem;
+    font-weight: 600;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: .1s;
+
+    &:hover{
+      filter: drop-shadow(0 0 1rem var(--green-100));
+    }
+  }
+
+  #navegation{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    width: 15rem;
+
+    i{
+      font-size: 2rem;
+      color: var(--white-300);
+
+      &:hover{
+        color: var(--green-100);
+        filter: drop-shadow(0 0 3rem var(--green-100));
+      }
+    }
+
+  }
+
+  img{
+    border-radius: 50%;
+    width: 39rem;
+    animation: Brigthness 2s alternate infinite ease-in-out;
+    
+  }
+}
+
+
+@media (max-width:1020px){
+  .containerHome{
+    gap: 1rem;
+    flex-direction: column-reverse;
+    img{
+      width: 20rem;
+    }
+
+    .left{
+      align-items: center;
+      text-align: center;
+
+      .message{
+        font-size: 4rem;
+        line-height: 4rem;
+      }
+
+      .description{
+        max-width: 100%;
+      }
+
+      #navegation{
+        margin-top: 2rem;
+        width: 20rem;
+
+        i{
+          font-size: 2.5rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width:515px){
+  .containerHome{
+    img{
+      width: 15rem;
+    }
+    .left{
+      gap: 1rem;
+      .message{
+        font-size: 3rem;
+        line-height: 3rem;
+      }
+      .description{
+        max-width: 30rem;
+        width: 30rem;
+      }
+      #navegation{
+        margin-top: 2rem;
+        width: 25rem;
+
+        i{
+          font-size: 4rem;
+        }
+      }
+    }
+  }
+}

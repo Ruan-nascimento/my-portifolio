@@ -1,0 +1,34 @@
+:root{
+  --green-100: #31FFAA;
+  --green-300: #05613e;
+  --white-300: #FAFEFC;
+  --white-100: #fff;
+  --gray-500: #23262D;
+  --black: #000000;
+
+  // font-family: "JetBrains Mono", monospace;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+  list-style: none;
+  text-decoration: none;
+}
+
+html{
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  -webkit-font-smoothing: antialiazed;
+
+  background-color: var(--gray-500);
+  color: var(--white-100);
+}
