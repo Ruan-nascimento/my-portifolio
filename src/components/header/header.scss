@@ -3,6 +3,8 @@ header{
   align-items: center;
   justify-content: center;
 
+  background-color: var(--gray-500-op);
+
   height: 10rem;
   padding: 2rem 3.5rem;
 
@@ -64,12 +66,12 @@ nav{
         transition: 0.2s;
 
         &:hover{
-          color: var(--green-300);
+          color: var(--green-100);
         }
       }
 
       a.select{
-        color: var(--green-300);
+        color: var(--green-100);
       }
     }
 

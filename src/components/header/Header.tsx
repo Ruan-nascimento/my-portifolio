@@ -1,8 +1,35 @@
+import { useState } from 'react'
 import './header.scss'
 
 export function Header() {
+  const [scroll, setScroll] = useState(window.scrollY)
+
+  window.addEventListener('scroll', () => {
+    setScroll(window.scrollY)
+  })
+
+  const selected = document.querySelector('.select')
+  console.log(selected)
+
+  if (scroll <= 475) {
+    selected?.classList.remove('select')
+    document.querySelector('.one')?.classList.add('select')
+  }
+  if (scroll > 475 && scroll <= 950) {
+    selected?.classList.remove('select')
+    document.querySelector('.two')?.classList.add('select')
+  }
+  if (scroll > 950 && scroll <= 1425) {
+    selected?.classList.remove('select')
+    document.querySelector('.tree')?.classList.add('select')
+  }
+  if (scroll > 1425) {
+    selected?.classList.remove('select')
+    document.querySelector('.four')?.classList.add('select')
+  }
+
   return (
-    <header className="header">
+    <header className="header" id="header">
       <nav>
         <div className="left">
           <h1>
