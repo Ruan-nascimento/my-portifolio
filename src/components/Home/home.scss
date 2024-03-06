@@ -25,6 +25,17 @@
     flex-direction: column;
   }
 
+  b{
+    color: var(--green-300);
+    transition: .1s;
+    cursor: context-menu;
+
+    &:hover{
+      color: var(--green-100);
+      filter: drop-shadow(0 0 1px var(--green-100));
+    }
+  }
+
   .message{
     font-family: "JetBrains Mono", monospace;
     font-size: 5rem;
@@ -34,6 +45,11 @@
   .description{
     max-width: 80%;
     margin-top: 1rem;
+    line-height: 2rem;
+  }
+  .calltoaction{
+    margin-top: 1rem;
+    font-size: 2rem;
   }
 
   .contateme{
@@ -45,6 +61,7 @@
 
     color: var(--gray-500);
     font-size: 1.8rem;
+    font-family: "JetBrains Mono", monospace;
     font-weight: 600;
 
     display: flex;

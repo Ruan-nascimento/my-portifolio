@@ -6,7 +6,13 @@ export function Home() {
       <div className="left">
         <h2 className="message">Desenvolvedor Front End</h2>
         <p className="description">
-          Criação de Landing Pages, Apps Funcionais, Sites Básicos etc...
+          Estudante de Programação desde <b>2022</b>, Conhecimentos em{' '}
+          <b>JavaScript</b>, <b>TypeScript</b>, <b>Node JS</b>, <b>React</b>,{' '}
+          <b>Tecnicas de Clean Code</b>, entre outros conhecimentos sobre
+          desenvolvimento web.
+        </p>
+        <p className="calltoaction">
+          E então, Vamos <b>Trabalhar Juntos?</b>
         </p>
         <a
           href="https://wa.me/5582993635589?text=Ol%C3%A1+Ruan%2C+vim+pelo+seu+Site%2C+Gostaria+de+Fazer+um+Or%C3%A7amento%21"

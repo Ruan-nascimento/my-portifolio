@@ -3,6 +3,7 @@ import { Home } from './components/Home/Home'
 import { Header } from './components/header/Header'
 
 import './styles/app.scss'
+import { About } from './components/about/About'
 
 export function App() {
   return (
@@ -11,7 +12,9 @@ export function App() {
         <Header />
         <Home />
       </section>
-      <section className="about" id="about"></section>
+      <section className="about" id="about">
+        <About />
+      </section>
       <section className="works" id="works"></section>
       <section className="contact" id="contact"></section>
 
